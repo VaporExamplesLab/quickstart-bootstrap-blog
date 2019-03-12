@@ -1,0 +1,44 @@
+#set("title") {Elements}
+
+#set("body") {
+<h1>Elements (H1)</h1>
+<p><a id="toc"></a> <a href="#linkHeadings">Headings</a> • <a href="#linkTables">Tables</a> • <a href="#linkResources">Resources</a></p>
+<h2>Heading H2 <a id="linkHeadings"><a href="#toc">▴</a></a></h2>
+<h3>Heading H3</h3>
+<h4>Heading H4</h4>
+<h5>Heading H5</h5>
+<h6>Heading H6</h6>
+<h2>Tables (extension) <a id="linkTables"><a href="#toc">▴</a></a></h2>
+<table class="table table-hover">
+<thead>
+<tr class="header">
+<th>Tables</th>
+<th style="text-align: center;">A</th>
+<th style="text-align: right;"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>zebra stripes</td>
+<td style="text-align: center;">alternate</td>
+<td style="text-align: right;">120</td>
+</tr>
+<tr class="even">
+<td>column 2</td>
+<td style="text-align: center;">centered</td>
+<td style="text-align: right;">1230</td>
+</tr>
+<tr class="odd">
+<td>column 3</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
+<h2>Resources <a id="linkResources"><a href="#toc">▴</a></a></h2>
+<ul>
+<li><a href="https://dev.w3.org/html5/html-author/charref">W3: Character Entity Reference Chart ⇗</a></li>
+</ul>
+}
+
+#embed("Base")

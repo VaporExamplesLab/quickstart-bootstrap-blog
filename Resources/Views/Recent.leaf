@@ -1,0 +1,8 @@
+#set("title") {Recent}
+
+#set("body") {
+	<div class="recentpage">
+	</div>
+}
+
+#embed("Base")

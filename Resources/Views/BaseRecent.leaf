@@ -1,0 +1,9 @@
+<h6 class="dropdown-header"><em>New</em></h6>
+<a class="dropdown-item" href="/post/2018/11/FirstPost">2018-11 FirstPost</a>
+<a class="dropdown-item" href="/post/2018/12/ShapeGeometry">2018-12 ShapeGeometry</a>
+<a class="dropdown-item" href="/post/2019/01/CircleAnalysis">2019-01 CircleAnalysis</a>
+<a class="dropdown-item" href="/post/2019/01/RandomMusings">2019-01 RandomMusings</a>
+<a class="dropdown-item" href="/post/2019/02/CircleHistory">2019-02 CircleHistory</a>
+<h6 class="dropdown-header"><em>Updated</em></h6>
+<div class="dropdown-divider"></div>
+<a class="dropdown-item" href="/archives">Archives</a>

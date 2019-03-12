@@ -1,0 +1,10 @@
+#set("title") {Category}
+
+#set("body") {
+	<div class="categorypage">
+        <h1>Category Tree.</h1>
+		<img src="/images/Tree-684764.svg" height="800">
+	</div>
+}
+
+#embed("Base")

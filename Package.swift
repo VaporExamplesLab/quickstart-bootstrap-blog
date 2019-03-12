@@ -1,4 +1,4 @@
-// swift-tools-version:4.0
+// swift-tools-version:4.2
 import PackageDescription
 
 let package = Package(
@@ -14,6 +14,7 @@ let package = Package(
         .target(name: "App", dependencies: ["Leaf", "Vapor"]),
         .target(name: "Run", dependencies: ["App"]),
         .testTarget(name: "AppTests", dependencies: ["App"])
-    ]
+    ],
+    swiftLanguageVersions: [.v4_2]
 )
 

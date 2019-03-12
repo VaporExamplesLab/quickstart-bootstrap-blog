@@ -1,0 +1,9 @@
+#set("title") {Post}
+
+#set("body") {
+	<div class="postpage">
+        <h1>Once upon an evening post, the details began to unwind.</h1>
+	</div>
+}
+
+#embed("Base")

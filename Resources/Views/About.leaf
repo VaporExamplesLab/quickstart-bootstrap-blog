@@ -1,0 +1,10 @@
+#set("title") {About}
+
+#set("body") {
+	<div class="aboutpage">
+        <h1>It's About Timing!</h1>
+		<img src="/images/GearsMotion-34358.svg">
+	</div>
+}
+
+#embed("Base")
