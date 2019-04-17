@@ -18,7 +18,7 @@
 [Original Setup](#OriginalSetup) •
 [Resources](#Resources) 
 
-## Getting Started <a id="GettingStarted">[▴](#toc)</a>
+## Getting Started <span id="GettingStarted">[▴](#toc)</span>
 
 **Prerequisites**
 
@@ -63,17 +63,75 @@ cd quickstart-bootstrap-blog
 vapor update -y
 ```
 
+**Directory Structure**
+
+``` bash
+blog_content_original/
+  html/
+  # markdown/…/*.md pages map to blog_content_processed/leaf/_m/…/*.leaf
+  # markdown/…/*_files/*  map to blog_content_processed/public/_m/…/*.leaf
+  markdown/   
+    yyyy/
+      MM/
+        article_files
+        article.md
+  paprika/
+#
+blog_content_processed/
+  leaf/
+    _h/
+    _m/
+      yyyy/
+        mm/
+          article.leaf
+    _r/
+  public/
+    _h/
+    _m/
+      yyyy/
+        mm/
+          article_files/*
+    _r/
+
+quickstart-bootstrap-blog/
+  Public/   # must match URL for relative addressing
+     _h → blog_content_processed/public/_h
+     _m → blog_content_processed/public/_m
+     _r → blog_content_processed/public/_r
+  Resources/
+    Views/  # path to leaf can be revised by router ?
+      _h → blog_content_processed/leaf/_h
+      _m → blog_content_processed/leaf/_m
+      _r → blog_content_processed/leaf/_r
+```
+
+_route_
+
+``` swift
+```
+
+_leaf template_
+
+``` leaf
+```
 
 ``` bash
 cd quickstart-bootstrap-blog
-ln -s ../../blog_content_processed/public Public/blog 
+ln -s ../../blog_content_processed/public/_h Public/_h 
+ls -l Public/_h/
+ln -s ../../blog_content_processed/public/_m Public/_m 
+ls -l Public/_m/
+ln -s ../../blog_content_processed/public/_r Public/_r 
+ls -l Public/_r/
 ls -l Public
-ls -l Public/blog/
 
-ln -s ../../../blog_content_processed/leaf/m Resources/Views/blog_m 
-ls -l Resources
+ln -s ../../../blog_content_processed/leaf/_h Resources/Views/_h 
+ls -l Resources/Views/_h/
+ln -s ../../../blog_content_processed/leaf/_m Resources/Views/_m 
+ls -l Resources/Views/_m/
+ln -s ../../../blog_content_processed/leaf/_r Resources/Views/_r 
+ls -l Resources/Views/_r/
 ls -l Resources/Views
-ls -l Resources/Views/blog_m/
 ```
 
 Set Xcode scheme to "Run > My Mac".
@@ -84,7 +142,7 @@ Click the run button and check the results in a browser at `http://localhost:808
 
 ![TBD:LandingPage](README_files/LandingPage.png)
 
-## Original Setup <a id="OriginalSetup">[▴](#toc)</a>
+## Original Setup <span id="OriginalSetup">[▴](#toc)</span>
 
 The following steps were completed to create the `quickstart-bootstrap-blog` example. 
 
@@ -107,6 +165,6 @@ vapor update -y
 
 
 
-## Resources <a id="Resources">[▴](#toc)</a>
+## Resources <span id="Resources">[▴](#toc)</span>
 
 * [Bootstrap ⇗](https://getbootstrap.com)
